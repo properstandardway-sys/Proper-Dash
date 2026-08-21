@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Proper Home Prep Brand Colors ── */
+  --color-navy:    #1B2A4A;
+  --color-gold:    #C9A84C;
+  --color-slate:   #6B7D8F;
+  --color-cream:   #FAF7F2;
+  --color-charcoal:#3D3D3D;
+  --color-light:   #F0EDE6;
+
+  /* ── Font Families ── */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Lato', Arial, sans-serif;
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-cream); }
+::-webkit-scrollbar-thumb { background: var(--color-slate); border-radius: 3px; }
+
+/* PWA safe area */
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+.safe-top    { padding-top:    env(safe-area-inset-top); }

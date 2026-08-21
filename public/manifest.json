@@ -1,0 +1,37 @@
+{
+  "name": "The Proper Dashboard",
+  "short_name": "Proper",
+  "description": "Real-time STR turnover management by Proper Home Prep",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1B2A4A",
+  "theme_color": "#1B2A4A",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "shortcuts": [
+    {
+      "name": "My Jobs",
+      "url": "/tech",
+      "description": "View today's job assignments"
+    },
+    {
+      "name": "My Dashboard",
+      "url": "/client",
+      "description": "View live property status"
+    }
+  ]
+}
